@@ -1,0 +1,128 @@
+$fonts: Arial, Helvetica, sans-serif;
+$maincolor: #32de10;
+$backgroundcolor: #f2f2f2;
+$textcolor: black;
+$sizeh1: 50px;
+
+
+body {
+    background: $backgroundcolor;
+    margin: 0;
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  header {
+    margin-top: 0;
+    background-color: $maincolor;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10em;
+    grid-template-areas: ". h1 clock";
+  }
+  
+  h1 {
+    color: $textcolor;
+    font-size: $sizeh1;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    display: inline-grid;
+    grid-area: h1;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    margin-top: 3em;
+    font-family: $fonts;
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  td, th {
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #64fb5f;
+  }
+  tr:nth-child(odd) {
+    background-color: #96ff7f;
+  }
+  
+  tr:hover {
+    background-color: rgb(180, 177, 177);
+  }
+  
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: $maincolor;
+    color: rgb(0, 0, 0);
+  }
+  
+  .clock {
+    display: inline-grid;
+    justify-content: right;
+    align-content: center;
+    margin-right: 20px;
+    color: $textcolor;
+    font-size: 45px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    font-weight: bold;
+    grid-area: clock;
+  }
+  
+  form {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  
+  button {
+    background-color: $maincolor;
+    border: none;
+    color: $textcolor;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  tr {
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+  }
+  
+  td {
+    height: 25px;
+    width: 60px;
+    text-align: center;
+  }
+  
+  .nav_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }

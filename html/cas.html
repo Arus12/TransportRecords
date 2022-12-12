@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Evidence dopravy</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jan Černý, Daniel Rutte" />
+</head>
+
+<body>
+    <header>
+    <h1>Přidání spoje</h1>
+</header>
+    <div class = "main">
+        <div class="buttons"><div class = "nav_button">
+            <form action="../index.php"><input type="hidden"/><button>
+            <p>Zpět na evidenci dopravy</p></button></form></div>
+        </div>
+        <div class = "form">
+    <form action="../php/call.php" method="POST">
+        <input type="text" name="spoj" placeholder="Spoj">
+        <input type="text" name="prijezd" placeholder="10:00">
+        <input type="text" name="odjezd" placeholder="10:05">
+        <input type="text" name="mesto" placeholder="Destinace">
+        <input type="hidden" name="what" value="0">
+        <button type="submit" class= "edit" value="Submit">Přidat čas</button>
+        </form>
+    </div>
+</body>
+
+</html>
